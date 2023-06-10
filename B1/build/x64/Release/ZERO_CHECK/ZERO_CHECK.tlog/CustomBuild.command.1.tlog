@@ -1,0 +1,10 @@
+^C:\USERS\WJDGN\GEANT4_PROJECT\B1\BUILD\CMAKEFILES\7E5F47E37A516C8629E493B248C1B31F\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/wjdgn/Geant4_Project/B1 -BC:/Users/wjdgn/Geant4_Project/B1/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/wjdgn/Geant4_Project/B1/build/B1.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
